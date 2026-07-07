@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme inline {
+    --font-sans: var(--font-sans);
+    --font-mono: var(--font-mono);
+}
+
+/* ─── Color tokens — single source of truth for every custom color used
+     across components. Components should reference these via Tailwind
+     utilities (bg-surface, text-brand, bg-box-1, ...), never inline
+     hex/style colors. Sourced from the DevSolve (Varkala Red) brand book. ─── */
+@theme {
+    --color-surface: #FAF7F0;
+    --color-surface-warm: #ECE6D8;
+    --color-ink: #141414;
+    --color-ink-soft: #2a2a2a;
+    --color-ink-muted: #6b6b6b;
+    --color-rule: #d8d0bf;
+
+    --color-brand: #7A2626;
+    --color-brand-90: #8d3232;
+    --color-brand-70: #a45c5c;
+    --color-brand-50: #c18b8b;
+    --color-brand-30: #debdbd;
+    --color-brand-10: #f5eded;
+
+    --color-box-1: #f5eded;
+    --color-box-2: #ECE6D8;
+    --color-box-3: #f7efe9;
+}
+
+html,
+body {
+    background-color: var(--color-surface);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.055'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* ─── Marquee (partner / affiliation strip) ─── */
+.marquee {
+    -webkit-mask-image: linear-gradient(
+        90deg,
+        transparent,
+        black 8%,
+        black 92%,
+        transparent
+    );
+    mask-image: linear-gradient(
+        90deg,
+        transparent,
+        black 8%,
+        black 92%,
+        transparent
+    );
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 32s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .marquee-track {
+        animation: none;
+    }
+}
