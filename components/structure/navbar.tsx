@@ -11,7 +11,7 @@ const NAV_LINKS = [
 
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-40 bg-surface">
+    <header className="sticky top-0 z-40 bg-surface border-b border-rule">
       <div className="mx-auto flex min-h-20 w-full max-w-7xl items-center justify-between gap-4 px-6 py-4 md:px-10">
         <Link href="/" className="flex shrink-0 items-center gap-2">
           <DevSolveMark className="h-6 w-6 text-brand" />
@@ -39,7 +39,7 @@ export function Navbar() {
           Contact Us
         </Link>
       </div>
-      <HandDrawnDivider className="h-2 w-full text-rule" />
+      {/*<HandDrawnDivider className="h-2 w-full text-rule" />*/}
     </header>
   );
 }

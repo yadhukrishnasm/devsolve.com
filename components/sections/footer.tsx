@@ -1,7 +1,11 @@
 import Link from "next/link";
 import { DevSolveMark, MailIcon, MapPinIcon } from "@/components/icons";
 import { HandDrawnDivider } from "@/components/icons/hand-drawn-divider";
-import { contactEmail, contactEmailHref, registeredOfficeAddress } from "@/lib/contact";
+import {
+  contactEmail,
+  contactEmailHref,
+  registeredOfficeAddress,
+} from "@/lib/contact";
 
 const FOOTER_LINKS = [
   { href: "/about", label: "Who Are We" },
@@ -16,7 +20,6 @@ const FOOTER_LINKS = [
 export default function Footer() {
   return (
     <footer className="relative pt-14 pb-14">
-      <HandDrawnDivider className="absolute top-0 left-0 h-2.5 w-full text-rule" />
       <div className="mx-auto w-full max-w-5xl px-6">
         <div className="flex flex-col gap-10 md:flex-row md:justify-between">
           <div className="max-w-xs">
@@ -28,8 +31,8 @@ export default function Footer() {
             </div>
             <p className="mt-4 text-sm leading-relaxed text-ink-muted">
               A global institute for leadership excellence, institutional
-              capacity building, and development solutions through
-              knowledge, skills, and technology.
+              capacity building, and development solutions through knowledge,
+              skills, and technology.
             </p>
           </div>
 

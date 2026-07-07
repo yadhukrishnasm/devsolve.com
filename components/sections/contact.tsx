@@ -10,7 +10,11 @@ import {
 
 export default function Contact() {
   return (
-    <SectionShell id="contact" className="bg-brand text-surface" dividerClassName="text-brand-30/50">
+    <SectionShell
+      id="contact"
+      className="bg-brand text-surface"
+      dividerClassName="text-brand-30/50 hidden"
+    >
       <Container>
         <SectionHeading
           index="7"
