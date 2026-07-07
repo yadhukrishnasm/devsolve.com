@@ -36,7 +36,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <nav className="grid grid-cols-2 gap-x-8 gap-y-2 text-base sm:grid-cols-4 md:justify-items-end">
+          <nav className="grid grid-cols-2 gap-x-7 gap-y-4 md:gap-y-2 text-sm sm:grid-cols-4 md:justify-center">
             {FOOTER_LINKS.map((link) => (
               <Link
                 key={link.href}
