@@ -1,5 +1,5 @@
 // Placeholder contact channel — swap for the real inbox once assigned.
-export const contactEmail = "connect@devsolve.com";
+export const contactEmail = "connect@devsolve.org";
 export const contactEmailHref = `mailto:${contactEmail}`;
 
 export const registeredOfficeAddress =
