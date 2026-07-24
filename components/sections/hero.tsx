@@ -9,10 +9,13 @@ const Hero = () => {
       <Container className="relative z-10">
         <div className="grid items-center gap-12 md:grid-cols-2 md:gap-16">
           <div>
-            <p className="text-lg font-semibold text-brand">DevSolve</p>
-            <h1 className="mt-3 text-4xl leading-[1.15] font-bold tracking-tight text-ink sm:text-5xl">
-              The Institute for Development and Leadership
+            <h1 className="text-5xl font-bold leading-[0.95] tracking-tight text-brand sm:text-6xl md:text-7xl">
+              DevSolve
             </h1>
+
+            <p className="mt-4 max-w-xl text-lg font-medium leading-snug text-ink sm:text-xl md:text-2xl">
+              The Institute for Development and Leadership
+            </p>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft md:text-xl">
               A global institute in evolution, dedicated to providing
               development solutions through knowledge, skills, and advanced
